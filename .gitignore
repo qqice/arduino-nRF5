@@ -8,3 +8,4 @@ cores/nRF5/SDK/components/softdevice/*/hex/*.txt
 extras/ide-tools/bin
 extras/ide-tools/nRF5FlashSoftDevice.jar
 .vscode/*
+.idea/*
