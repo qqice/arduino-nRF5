@@ -54,6 +54,43 @@ Generic_nRF52833.menu.lfclk.lfsynt=Synthesized
 Generic_nRF52833.menu.lfclk.lfsynt.build.lfclk_flags=-DUSE_LFSYNT
 
 
+DWM3001CDK.name=Qorvo DWM3001C Module Development Board
+
+DWM3001CDK.upload.tool=sandeepmistry:openocd
+DWM3001CDK.upload.protocol=jlink
+DWM3001CDK.upload.target=nrf52
+DWM3001CDK.upload.maximum_size=524288
+DWM3001CDK.upload.setup_command=transport select swd; set WORKAREASIZE 0;
+DWM3001CDK.upload.use_1200bps_touch=false
+DWM3001CDK.upload.wait_for_upload_port=false
+DWM3001CDK.upload.native_usb=false
+
+DWM3001CDK.bootloader.tool=sandeepmistry:openocd
+
+DWM3001CDK.build.mcu=cortex-m4
+DWM3001CDK.build.f_cpu=64000000
+DWM3001CDK.build.board=DWM3001CDK
+DWM3001CDK.build.core=nRF5
+DWM3001CDK.build.variant=DWM3001CDK
+DWM3001CDK.build.variant_system_lib=
+DWM3001CDK.build.extra_flags=-DNRF52833_XXAA
+DWM3001CDK.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16
+DWM3001CDK.build.ldscript=nrf52833_xxaa.ld
+
+DWM3001CDK.build.lfclk_flags=-DUSE_LFXO
+
+DWM3001CDK.menu.softdevice.none=None
+DWM3001CDK.menu.softdevice.none.softdevice=none
+DWM3001CDK.menu.softdevice.none.softdeviceversion=
+
+DWM3001CDK.menu.softdevice.s140=S140
+DWM3001CDK.menu.softdevice.s140.softdevice=s140
+DWM3001CDK.menu.softdevice.s140.softdeviceversion=7.2.0
+DWM3001CDK.menu.softdevice.s140.upload.maximum_size=409600
+DWM3001CDK.menu.softdevice.s140.build.extra_flags=-DNRF52 -DS140 -DNRF51_S140
+DWM3001CDK.menu.softdevice.s140.build.ldscript=nrf52833_s140_v7.ld
+
+
 BBCmicrobitV2.name=BBC micro:bit V2
 
 BBCmicrobitV2.vid.0=0x0d28
