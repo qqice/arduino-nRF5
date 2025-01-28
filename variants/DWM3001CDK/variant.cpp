@@ -20,7 +20,7 @@
 #include "variant.h"
 
 const uint32_t g_ADigitalPinMap[] = {
-  // D0 - D13
+  // D0 - D11
   17,
   12,
   21,
@@ -33,6 +33,8 @@ const uint32_t g_ADigitalPinMap[] = {
   41,
   32,
   37,
+
+  // SDA, SCL
   26,
   23,
 
@@ -43,7 +45,7 @@ const uint32_t g_ADigitalPinMap[] = {
   19,
   15,
 
-  // SDA, SCL
+  // ACC SDA, SCL
   24,
   36,
 

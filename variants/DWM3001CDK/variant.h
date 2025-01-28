@@ -33,7 +33,7 @@ extern "C"
 
 // Number of pins defined in PinDescription array
 #define PINS_COUNT           (36u)
-#define NUM_DIGITAL_PINS     (15u)
+#define NUM_DIGITAL_PINS     (13u)
 #define NUM_ANALOG_INPUTS    (1u)
 #define NUM_ANALOG_OUTPUTS   (0u)
 
@@ -88,13 +88,19 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 /*
  * Wire Interfaces
  */
-#define WIRE_INTERFACES_COUNT 1
+#define WIRE_INTERFACES_COUNT 2
 
-#define PIN_WIRE_SDA         (17)
-#define PIN_WIRE_SCL         (18)
+#define PIN_WIRE_SDA         (26)
+#define PIN_WIRE_SCL         (23)
 
-static const uint8_t SDA = PIN_WIRE_SDA;
-static const uint8_t SCL = PIN_WIRE_SCL;
+static const uint8_t SDA = PIN_WIRE_SDA ;
+static const uint8_t SCL = PIN_WIRE_SCL ;
+
+#define PIN_ACC_SDA         (17)
+#define PIN_ACC_SCL         (18)
+
+static const uint8_t ACC_SDA = PIN_ACC_SDA;
+static const uint8_t ACC_SCL = PIN_ACC_SCL;
 
 /*
  * Other DWM3001C internal IOs
