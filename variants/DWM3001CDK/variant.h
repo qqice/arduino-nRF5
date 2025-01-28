@@ -96,11 +96,11 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 static const uint8_t SDA = PIN_WIRE_SDA ;
 static const uint8_t SCL = PIN_WIRE_SCL ;
 
-#define PIN_ACC_SDA         (17)
-#define PIN_ACC_SCL         (18)
+#define PIN_WIRE1_SDA         (17)
+#define PIN_WIRE1_SCL         (18)
 
-static const uint8_t ACC_SDA = PIN_ACC_SDA;
-static const uint8_t ACC_SCL = PIN_ACC_SCL;
+static const uint8_t ACC_SDA = PIN_WIRE1_SDA;
+static const uint8_t ACC_SCL = PIN_WIRE1_SCL;
 
 /*
  * Other DWM3001C internal IOs
