@@ -57,7 +57,7 @@ static const uint8_t BTN = PIN_BUTTON_TOP ;
 /*
  * Analog pins
  */
-#define PIN_A0               (28)
+#define PIN_A0               (14)
 
 static const uint8_t A0  = PIN_A0 ; // AIN4
 
@@ -90,8 +90,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 2
 
-#define PIN_WIRE_SDA         (26)
-#define PIN_WIRE_SCL         (23)
+#define PIN_WIRE_SDA         (12)
+#define PIN_WIRE_SCL         (13)
 
 static const uint8_t SDA = PIN_WIRE_SDA ;
 static const uint8_t SCL = PIN_WIRE_SCL ;
